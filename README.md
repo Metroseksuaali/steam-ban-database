@@ -1,6 +1,10 @@
 # Steam-Ban-database
 
-Important note: This program checks for all kinds of bans in steam not purely vac bans. 
+![kuva](https://github.com/Metroseksuaali/steam-ban-database/assets/13061405/f7b44999-5d30-4450-a151-8a77ca06c4df)
+![kuva](https://github.com/Metroseksuaali/steam-ban-database/assets/13061405/8b4aa676-0a90-4ec1-9fb3-ebcdf8377f4d)
+
+
+Important note: This program checks for Community ban and VAC Ban tags from steamAPI
 
 Startup and Installation:
 
