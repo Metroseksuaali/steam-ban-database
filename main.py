@@ -127,8 +127,18 @@ def check_bans(steam_api, listbox, status_listbox, steam_ids, percentage_label):
 
     percentage_label.config(text=f"Banned: {banned_percentage:.2f}% | Not Banned: {not_banned_percentage:.2f}%")
 
+# Define context_menu as a global variable
+context_menu = None
+listbox = None
+steam_ids = None
+# Function to display the context menu
+def show_context_menu(event):
+    context_menu.tk_popup(event.x_root, event.y_root)
+
 # Function for removing a selected SteamID from the list
 def remove_selected_steam_id():
+    global listbox, steam_ids  # Make listbox and steam_ids global
+
     selected_index = listbox.curselection()
     if not selected_index:
         messagebox.showwarning("Warning", "Select an item to remove.")
@@ -149,10 +159,6 @@ def remove_selected_steam_id():
     else:
         messagebox.showerror("Error", "Item not found in the list.")
 
-# Function to display the context menu
-def show_context_menu(event):
-    context_menu.tk_popup(event.x_root, event.y_root)
-
 # Function to add an API key to the SteamAPI instance
 def add_api_key(api_key_entry, steam_api):
     api_key = api_key_entry.get().strip()
@@ -166,6 +172,7 @@ def add_api_key(api_key_entry, steam_api):
 
 # Function to handle the main GUI and application logic
 def main():
+    global context_menu, listbox, steam_ids  # Make context_menu global
     root = tk.Tk()
     root.title("Steam Ban Checker")
 
