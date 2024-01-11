@@ -52,6 +52,13 @@ Program Overview:
 
 This simple Python program allows you to save Steam users locally, enabling you to track suspicious accounts while gaming. The program utilizes the Steam Web API to check for VAC bans.
 
+
+When you open someones steam profile there is 2 ways that adress is displayed.
+        ```https://steamcommunity.com/id/Metroseksuaali/ ``` This is meant to be pasted on URL box
+        ```https://steamcommunity.com/profiles/76561199050865196/``` From this just get the number value ```76561199050865196``` And past it on steamid64 box
+
+
+
 Notes:
 
 To use the program, you will need a Steam API key, which you can obtain as mentioned above.
