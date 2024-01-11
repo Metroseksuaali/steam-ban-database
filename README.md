@@ -1,5 +1,7 @@
 # Steam-Ban-database
 
+Important note: This program checks for all kinds of bans in steam not purely vac bans. 
+
 Startup and Installation:
 
 Make sure you have Python installed on your computer.
