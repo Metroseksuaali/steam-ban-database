@@ -1,4 +1,4 @@
-# Vacban-database
+# Steam-Ban-database
 
 Startup and Installation:
 
